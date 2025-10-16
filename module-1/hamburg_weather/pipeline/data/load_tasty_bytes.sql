@@ -337,6 +337,6 @@ COPY INTO {{env}}_tasty_bytes.raw_pos.order_header
 FROM @{{env}}_tasty_bytes.public.s3load/raw_pos/subset_order_header/;
 
 
--- order_detail table load
+-- order_detail table load commented new
 COPY INTO {{env}}_tasty_bytes.raw_pos.order_detail
 FROM @{{env}}_tasty_bytes.public.s3load/raw_pos/subset_order_detail/;
